@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "b93c5e0c2e4032e5d371";
+/******/ 	var hotCurrentHash = "486722ceed9e9b942727";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -972,7 +972,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/deploy-react/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
@@ -4613,7 +4613,7 @@ const initialState = {
 });
 const setLocale = locale => (dispatch) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(void 0, void 0, void 0, function* () {
     if (!Object.keys(react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].context.translations).includes(locale)) {
-        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1628064346391'}`, { baseURL: '' });
+        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1628065816753'}`, { baseURL: '' });
         react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].registerTranslations(locale, response.data);
     }
     dispatch({
