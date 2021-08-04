@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "91a82a63d6f8ce5c27f7";
+/******/ 	var hotCurrentHash = "64fa2bef7fe960f10bdc";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -4613,7 +4613,7 @@ const initialState = {
 });
 const setLocale = locale => (dispatch) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(void 0, void 0, void 0, function* () {
     if (!Object.keys(react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].context.translations).includes(locale)) {
-        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1628068621141'}`, { baseURL: '' });
+        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1628069150067'}`, { baseURL: '' });
         react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].registerTranslations(locale, response.data);
     }
     dispatch({
