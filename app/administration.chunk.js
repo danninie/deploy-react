@@ -1167,57 +1167,6 @@ const mapDispatchToProps = { getUsers: _user_management_reducer__WEBPACK_IMPORTE
 
 /***/ }),
 
-/***/ "./src/main/webapp/app/shared/util/entity-utils.ts":
-/*!*********************************************************!*\
-  !*** ./src/main/webapp/app/shared/util/entity-utils.ts ***!
-  \*********************************************************/
-/*! exports provided: cleanEntity, mapIdList, overridePaginationStateWithQueryParams */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cleanEntity", function() { return cleanEntity; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapIdList", function() { return mapIdList; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "overridePaginationStateWithQueryParams", function() { return overridePaginationStateWithQueryParams; });
-/* harmony import */ var lodash_pick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/pick */ "./node_modules/lodash/pick.js");
-/* harmony import */ var lodash_pick__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_pick__WEBPACK_IMPORTED_MODULE_0__);
-
-/**
- * Removes fields with an 'id' field that equals ''.
- * This function was created to prevent entities to be sent to
- * the server with relationship fields with empty an empty id and thus
- * resulting in a 500.
- *
- * @param entity Object to clean.
- */
-const cleanEntity = entity => {
-    const keysToKeep = Object.keys(entity).filter(k => !(entity[k] instanceof Object) || (entity[k]['id'] !== '' && entity[k]['id'] !== -1));
-    return lodash_pick__WEBPACK_IMPORTED_MODULE_0___default()(entity, keysToKeep);
-};
-/**
- * Simply map a list of element to a list a object with the element as id.
- *
- * @param idList Elements to map.
- * @returns The list of objects with mapped ids.
- */
-const mapIdList = (idList) => idList.filter((entityId) => entityId !== '').map((entityId) => ({ id: entityId }));
-const overridePaginationStateWithQueryParams = (paginationBaseState, locationSearch) => {
-    const params = new URLSearchParams(locationSearch);
-    const page = params.get('page');
-    const sort = params.get('sort');
-    if (page && sort) {
-        const sortSplit = sort.split(',');
-        paginationBaseState.activePage = +page;
-        paginationBaseState.sort = sortSplit[0];
-        paginationBaseState.order = sortSplit[1];
-    }
-    return paginationBaseState;
-};
-
- void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "F:\\work\\tuo\\2021\\mytry\\ReactDeploy\\src\\main\\webapp\\app\\shared\\util\\entity-utils.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "F:\\work\\tuo\\2021\\mytry\\ReactDeploy\\src\\main\\webapp\\app\\shared\\util\\entity-utils.ts"); } }(); 
-
-/***/ }),
-
 /***/ "./src/main/webapp/app/shared/util/pagination.constants.ts":
 /*!*****************************************************************!*\
   !*** ./src/main/webapp/app/shared/util/pagination.constants.ts ***!

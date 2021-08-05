@@ -1024,7 +1024,7 @@ module.exports = exports;
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../../deploy-react/content/images//jhipster_family_member_2.svg */ "./src/main/webapp/content/images//jhipster_family_member_2.svg");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../../deploy-react/content/images//jhipster_family_member_2.svg */ "./src/main/webapp/deploy-react/content/images//jhipster_family_member_2.svg");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
