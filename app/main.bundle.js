@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "b78ccc6ce0f2622cceae";
+/******/ 	var hotCurrentHash = "0bd1964d560921a43bd5";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -4888,16 +4888,16 @@ const Admin = react_loadable__WEBPACK_IMPORTED_MODULE_2___default()({
 });
 const Routes = () => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "view-routes" },
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null,
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/login", component: app_modules_login_login__WEBPACK_IMPORTED_MODULE_3__["default"] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/logout", component: app_modules_login_logout__WEBPACK_IMPORTED_MODULE_8__["default"] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/account/register", component: app_modules_account_register_register__WEBPACK_IMPORTED_MODULE_4__["default"] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/account/activate/:key?", component: app_modules_account_activate_activate__WEBPACK_IMPORTED_MODULE_5__["default"] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/account/reset/request", component: app_modules_account_password_reset_init_password_reset_init__WEBPACK_IMPORTED_MODULE_6__["default"] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/account/reset/finish/:key?", component: app_modules_account_password_reset_finish_password_reset_finish__WEBPACK_IMPORTED_MODULE_7__["default"] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_auth_private_route__WEBPACK_IMPORTED_MODULE_11__["default"], { path: "/admin", component: Admin, hasAnyAuthorities: [app_config_constants__WEBPACK_IMPORTED_MODULE_14__["AUTHORITIES"].ADMIN] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_auth_private_route__WEBPACK_IMPORTED_MODULE_11__["default"], { path: "/account", component: Account, hasAnyAuthorities: [app_config_constants__WEBPACK_IMPORTED_MODULE_14__["AUTHORITIES"].ADMIN, app_config_constants__WEBPACK_IMPORTED_MODULE_14__["AUTHORITIES"].USER] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/", exact: true, component: app_modules_home_home__WEBPACK_IMPORTED_MODULE_9__["default"] }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_auth_private_route__WEBPACK_IMPORTED_MODULE_11__["default"], { path: "/", component: app_entities__WEBPACK_IMPORTED_MODULE_10__["default"], hasAnyAuthorities: [app_config_constants__WEBPACK_IMPORTED_MODULE_14__["AUTHORITIES"].USER] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/deploy-react/login", component: app_modules_login_login__WEBPACK_IMPORTED_MODULE_3__["default"] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/deploy-react/logout", component: app_modules_login_logout__WEBPACK_IMPORTED_MODULE_8__["default"] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/deploy-react/account/register", component: app_modules_account_register_register__WEBPACK_IMPORTED_MODULE_4__["default"] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/deploy-react/account/activate/:key?", component: app_modules_account_activate_activate__WEBPACK_IMPORTED_MODULE_5__["default"] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/deploy-react/account/reset/request", component: app_modules_account_password_reset_init_password_reset_init__WEBPACK_IMPORTED_MODULE_6__["default"] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/deploy-react/account/reset/finish/:key?", component: app_modules_account_password_reset_finish_password_reset_finish__WEBPACK_IMPORTED_MODULE_7__["default"] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_auth_private_route__WEBPACK_IMPORTED_MODULE_11__["default"], { path: "/deploy-react/admin", component: Admin, hasAnyAuthorities: [app_config_constants__WEBPACK_IMPORTED_MODULE_14__["AUTHORITIES"].ADMIN] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_auth_private_route__WEBPACK_IMPORTED_MODULE_11__["default"], { path: "/deploy-react/account", component: Account, hasAnyAuthorities: [app_config_constants__WEBPACK_IMPORTED_MODULE_14__["AUTHORITIES"].ADMIN, app_config_constants__WEBPACK_IMPORTED_MODULE_14__["AUTHORITIES"].USER] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { path: "/deploy-react/", exact: true, component: app_modules_home_home__WEBPACK_IMPORTED_MODULE_9__["default"] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_auth_private_route__WEBPACK_IMPORTED_MODULE_11__["default"], { path: "/deploy-react/", component: app_entities__WEBPACK_IMPORTED_MODULE_10__["default"], hasAnyAuthorities: [app_config_constants__WEBPACK_IMPORTED_MODULE_14__["AUTHORITIES"].USER] }),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(app_shared_error_error_boundary_route__WEBPACK_IMPORTED_MODULE_12__["default"], { component: app_shared_error_page_not_found__WEBPACK_IMPORTED_MODULE_13__["default"] }))));
 /* harmony default export */ __webpack_exports__["default"] = (Routes);
 
@@ -6149,7 +6149,7 @@ const initialState = {
 });
 const setLocale = locale => (dispatch) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(void 0, void 0, void 0, function* () {
     if (!Object.keys(react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].context.translations).includes(locale)) {
-        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1628261038114'}`, { baseURL: '' });
+        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1628261477289'}`, { baseURL: '' });
         react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].registerTranslations(locale, response.data);
     }
     dispatch({
