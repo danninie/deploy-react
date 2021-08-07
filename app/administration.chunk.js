@@ -1185,4 +1185,3 @@ const ITEMS_PER_PAGE = 20;
 
 }]);
 //# sourceMappingURL=administration.chunk.js.map
-
