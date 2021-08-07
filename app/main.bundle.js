@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "71b3ef1440c357b938a3";
+/******/ 	var hotCurrentHash = "9c84867a75e2e862f423";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1024,7 +1024,7 @@ module.exports = exports;
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../../deploy-react/content/images/jhipster_family_member_2.svg */ "./src/main/webapp/content/images/jhipster_family_member_2.svg");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../../content/images/jhipster_family_member_2.svg */ "./src/main/webapp/content/images/jhipster_family_member_2.svg");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -5211,7 +5211,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const BrandIcon = props => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({}, props, { className: "brand-icon" }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: "deploy-react/content/images/logo-jhipster.png", alt: "Logo" })));
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: "content/images/logo-jhipster.png", alt: "Logo" })));
 const Brand = props => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["NavbarBrand"], { tag: react_router_dom__WEBPACK_IMPORTED_MODULE_3__["NavLink"], to: "/", className: "brand-logo" },
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BrandIcon, null),
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: "brand-title" },
@@ -6148,7 +6148,7 @@ const initialState = {
 });
 const setLocale = locale => (dispatch) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(void 0, void 0, void 0, function* () {
     if (!Object.keys(react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].context.translations).includes(locale)) {
-        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`deploy-react/i18n/${locale}.json?buildTimestamp=${'1628306123308'}`, { baseURL: '' });
+        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1628306875715'}`, { baseURL: '' });
         react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].registerTranslations(locale, response.data);
     }
     dispatch({
