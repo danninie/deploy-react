@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "74873037aad230515ce2";
+/******/ 	var hotCurrentHash = "8a5dbd2a4b6bbed869bb";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1505,8 +1505,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
-const baseHref = "deploy-react/";
+const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
 const App = (props) => {
     Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => {
         // props.getSession();
@@ -6149,7 +6148,7 @@ const initialState = {
 });
 const setLocale = locale => (dispatch) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(void 0, void 0, void 0, function* () {
     if (!Object.keys(react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].context.translations).includes(locale)) {
-        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`deploy-react/deploy-react/i18n/${locale}.json?buildTimestamp=${'1628263186670'}`, { baseURL: '' });
+        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`deploy-react/deploy-react/i18n/${locale}.json?buildTimestamp=${'1628302940732'}`, { baseURL: '' });
         react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].registerTranslations(locale, response.data);
     }
     dispatch({
